@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: shervin
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+minio:
+  bucket:
+    name: license
+  default:
+    folder: "/mnt/data"
+  access:
+    name: admin
+    secret: password
+
+  url: http://localhost:9001
