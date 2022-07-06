@@ -42,5 +42,17 @@ public class StudentDTO extends BaseDTO {
     @ApiModelProperty(required = true)
     private String file;
 
+    @NotNull
+    @NotBlank
+    @ApiModelProperty(required = true)
+    private String fatherName;
+
+
+    @NotNull
+    @NotBlank
+    @ApiModelProperty(required = true)
+    private String motherName;
+
+
 
 }

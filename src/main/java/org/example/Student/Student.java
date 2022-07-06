@@ -33,4 +33,12 @@ public class Student extends BaseEntity {
     @Column(name = "file",nullable = false)
     private String file;
 
+    @Transient
+    @Column(name = "fathername",nullable = false)
+    private String fatherName;
+
+    @Transient
+    @Column(name = "mothername",nullable = false)
+    private String motherName;
+
 }
